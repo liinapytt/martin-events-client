@@ -1,4 +1,8 @@
 <h1>Tere tulemast!</h1>
 <p>Broneeri piletid sind huvitavatele üritustele.</p>
 
+<% @events.each do |e| %>
+<%= e.name %> <br>
+<% end %>
+
 <% link_to('Events', events_path )%>
