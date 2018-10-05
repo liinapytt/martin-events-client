@@ -19,6 +19,8 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 # Use Sendgrid
 gem 'sendgrid-ruby'
+
+gem 'sidekiq'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
