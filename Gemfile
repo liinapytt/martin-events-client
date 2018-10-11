@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'sendgrid-ruby'
 
 gem 'sidekiq'
+
+gem 'recaptcha', require:'recaptcha/rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
