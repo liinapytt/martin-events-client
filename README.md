@@ -25,7 +25,7 @@ Opening the repo root folder:
 ```
 cd martin-events-client
 ```
-Important install (dont' ask why):
+Install gems:
 ```
 bundle install
 ```
