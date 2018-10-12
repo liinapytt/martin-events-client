@@ -78,11 +78,10 @@ source secret.env
 ## Errors
 
 Recaptcha error
-```
-close server
+
+Close server
 ```
 source secret.env
-```
 rails s
 ```
 
