@@ -1,6 +1,5 @@
 class Payment
   def request
-	req = Net::HTTP::Post.new(uri.path, 'Content-Type' => 'application/json')
 	req.body = body
 	res = http.request(req)
   end
@@ -10,15 +9,20 @@ class Payment
   end
 
   def http
-  	http = Net::HTTP.new(uri.host, uri.port)
+  	Net::HTTP.new(uri.host, uri.port)
   end
+
+  def net_http
+  	Net::HTTP::Post.new(uri.path, 'Content-Type' => 'application/json')
+  end
+
 
   def body
   	{
 		"amount": "123",
 		"token": "2899cfab862af6858bb8c2eb174da0fe",
         "sender_account": Time.now,
-        "recipient_name": "liina",
+        "recipient_name": "Liina Püttsepp",
         "recipient_account": "kdlajl",
         "description": Event.first.name
 	}.to_json
