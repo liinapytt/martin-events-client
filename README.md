@@ -62,15 +62,7 @@ Add to secret.env file:
 export RECAPTCHA_SITE_KEY='8735xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 export RECAPTCHA_SECRET_KEY='294819dshxxxxxxxxxxxxxxxxxxxxxxx'
 ```
-Add recaptcha gem to gemfile
-```
-gem 'recaptcha', require:'recaptcha/rails'
-bundle
-```
-Add recaptcha_tags to the forms you want to protect.
-```
- <%= recaptcha_tags %>
- ```
+
 Run source 
 ```
 source secret.env
