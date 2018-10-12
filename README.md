@@ -36,58 +36,58 @@ rake db:migrate
 Starting rails server to see your result in a browser:
 ```
 rails s
+```
 
 Import seed data:
 ```
 rake db:seed
 ```
 Go to sendgrid.com, signup or login
+```
 
 Under settings look up API keys
-
+```
 Create new API key
-
+```
 Create secret.env into root folder and include:
-
 ```
 export SENDGRID_API_KEY='agoaerhgaohgnakgnrkjakdnldkg'
 ```
 Adding Recaptcha
+```
 
 Go to https://github.com/ambethia/recaptcha
-
+```
 Obtain API keys (site and secret key)
-
+```
 Add to secret.env file
 ```
 export RECAPTCHA_SITE_KEY='8735xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+```
 export RECAPTCHA_SECRET_KEY='294819dshxxxxxxxxxxxxxxxxxxxxxxx'
 ```
 Add recaptcha gem to gemfile
 ```
+Run bundle
+```
 gem 'recaptcha', require:'recaptcha/rails'
 ```
 Add recaptcha_tags to the forms you want to protect.
-
 ```
  <%= recaptcha_tags %>
  ```
-
 Run source 
 ```
 source secret.env
 ```
-
 ## Errors
 
 Recaptcha error
-
+```
 close server
-
 ```
 source secret.env
 ```
-
 rails s
 ```
 
